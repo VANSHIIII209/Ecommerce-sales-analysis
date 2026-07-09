@@ -7,7 +7,7 @@
 
 ## Delivery Performance
 - Average delivery time (purchase to customer delivery): 12.44 days
-- Initial sample check (10 orders) showed all deliveries arriving *before* the estimated delivery date — suggests Olist may deliberately over-estimate delivery windows as a buffer. To be confirmed at full scale with % of orders late.
+- Only 6.50% of orders (2,700 out of 41,570) arrived later than the estimated delivery date — suggests Olist builds a reliability buffer into its delivery estimates rather than promising the fastest possible date.
 - Data quality note: a small number of orders have delivery date values that fail to convert via CAST — likely malformed text in the original CSV. Flagged for further investigation/cleaning.
 
 ## Data Cleaning Notes

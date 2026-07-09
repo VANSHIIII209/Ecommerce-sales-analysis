@@ -13,3 +13,9 @@
 ## Data Cleaning Notes
 - Date columns (`order_purchase_timestamp`, `order_delivered_customer_date`, etc.) were imported as `text` type, not native dates — required CAST(... AS DATETIME) before any date-based calculations.
 - `olist_customers_dataset` has two identifiers: `customer_id` (unique per order) and `customer_unique_id` (unique per real customer) — must use the latter for any "number of unique customers" type questions.
+
+## Revenue Trends
+- Strong, consistent month-over-month growth from Jan 2017 through Nov 2017 (from 316 to 3,182 orders/month).
+- Nov 2017 was the peak month (3,182 orders, R$434,671 revenue) — likely tied to Black Friday seasonality.
+- From Jan 2018 onward, order volume plateaus in the 2,500–3,000/month range rather than continuing to grow.
+- Caveat: the dataset appears to have incomplete data toward the end (Aug 2018 shows fewer orders) — likely a data collection cutoff rather than a genuine decline. This should be verified before concluding the business was shrinking.

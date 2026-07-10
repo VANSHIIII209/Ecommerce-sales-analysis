@@ -19,3 +19,14 @@
 - Nov 2017 was the peak month (3,182 orders, R$434,671 revenue) — likely tied to Black Friday seasonality.
 - From Jan 2018 onward, order volume plateaus in the 2,500–3,000/month range rather than continuing to grow.
 - Caveat: the dataset appears to have incomplete data toward the end (Aug 2018 shows fewer orders) — likely a data collection cutoff rather than a genuine decline. This should be verified before concluding the business was shrinking.
+
+## Customer Segmentation (RFM Analysis)
+- Built using Recency (days since last order), Frequency (order count), and Monetary (total spend), combined via CTEs and window functions.
+- Frequency scoring required custom business-defined buckets instead of NTILE, because most customers (the vast majority) placed only 1 order — NTILE's equal-split logic produced misleading, inconsistent scores for identical order counts.
+- Segment breakdown:
+  - Regular: 43.57% (17,702 customers)
+  - Lost: 39.49% (16,043 customers)
+  - Big Spender: 16.40% (6,665 customers)
+  - At Risk: 0.51% (209 customers)
+  - Champion: 0.02% (10 customers)
+- Key insight: "Champion" customers (high recency + high frequency + high monetary) are almost nonexistent, because repeat purchasing is rare on this platform — the vast majority of customers are one-time buyers. This suggests Olist's growth is driven primarily by new customer acquisition rather than repeat/loyal customers, and could indicate an opportunity for retention-focused strategies.

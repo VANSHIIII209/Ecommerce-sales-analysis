@@ -35,3 +35,9 @@
 - Credit card is the dominant payment method: 76,509 payments (out of ~103,500 total), processing R$12.49M — the large majority of total revenue.
 - Credit card is the only method with meaningful installment usage (avg 3.5 installments per payment). Boleto, voucher, and debit card are always paid in full (avg 1.0 installment) — consistent with how these payment types work in Brazil.
 - Data quality note: 3 records have payment_type = 'not_defined' with payment_value = 0 — likely incomplete/erroneous records, worth excluding from deeper monetary analysis.
+
+## Product Category Analysis
+- Top revenue category: beleza_saude (health & beauty) — 8,551 orders, R$1.22M revenue.
+- relogios_presentes (watches/gifts) has the highest average item price (R$200.17) among top categories despite lower order volume — a premium/low-volume category compared to others.
+- cama_mesa_banho (bed/bath/table) has the highest order count (9,051) but a lower average item price (R$93.13) — a high-volume, lower-value category.
+- Note: category names are in Portuguese (original Olist dataset labels); an English translation table exists in the source dataset but was not imported for this analysis.

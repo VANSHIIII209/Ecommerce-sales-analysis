@@ -30,3 +30,8 @@
   - At Risk: 0.51% (209 customers)
   - Champion: 0.02% (10 customers)
 - Key insight: "Champion" customers (high recency + high frequency + high monetary) are almost nonexistent, because repeat purchasing is rare on this platform — the vast majority of customers are one-time buyers. This suggests Olist's growth is driven primarily by new customer acquisition rather than repeat/loyal customers, and could indicate an opportunity for retention-focused strategies.
+
+## Payment Behavior
+- Credit card is the dominant payment method: 76,509 payments (out of ~103,500 total), processing R$12.49M — the large majority of total revenue.
+- Credit card is the only method with meaningful installment usage (avg 3.5 installments per payment). Boleto, voucher, and debit card are always paid in full (avg 1.0 installment) — consistent with how these payment types work in Brazil.
+- Data quality note: 3 records have payment_type = 'not_defined' with payment_value = 0 — likely incomplete/erroneous records, worth excluding from deeper monetary analysis.

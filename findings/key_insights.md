@@ -26,6 +26,12 @@
 - Segment breakdown:
   - Regular: 43.57% (17,702 customers)
   - Lost: 39.49% (16,043 customers)
+
+## Seller Performance Analysis
+- Analyzed sellers with 10+ orders, ranked by total revenue.
+- Key insight: the highest-revenue seller (1,132 orders, R$229,472 revenue) has a notably low average review score (2.33) — suggesting high sales volume does not guarantee customer satisfaction, and this seller may need quality or service intervention despite being a top earner.
+- By contrast, another high-volume seller (1,806 orders, R$200,472 revenue) achieved a perfect 5.00 average review score — demonstrating that strong volume and strong satisfaction can coexist.
+- Data quality note: some sellers show a NULL average review score, likely because some of their orders have no matching review record (via LEFT JOIN) — a data completeness gap, not an error in the query.
   - Big Spender: 16.40% (6,665 customers)
   - At Risk: 0.51% (209 customers)
   - Champion: 0.02% (10 customers)

@@ -10,10 +10,6 @@
 - Only 6.50% of orders (2,700 out of 41,570) arrived later than the estimated delivery date — suggests Olist builds a reliability buffer into its delivery estimates rather than promising the fastest possible date.
 - Data quality note: a small number of orders have delivery date values that fail to convert via CAST — likely malformed text in the original CSV. Flagged for further investigation/cleaning.
 
-## Data Cleaning Notes
-- Date columns (`order_purchase_timestamp`, `order_delivered_customer_date`, etc.) were imported as `text` type, not native dates — required CAST(... AS DATETIME) before any date-based calculations.
-- `olist_customers_dataset` has two identifiers: `customer_id` (unique per order) and `customer_unique_id` (unique per real customer) — must use the latter for any "number of unique customers" type questions.
-
 ## Revenue Trends
 - Strong, consistent month-over-month growth from Jan 2017 through Nov 2017 (from 316 to 3,182 orders/month).
 - Nov 2017 was the peak month (3,182 orders, R$434,671 revenue) — likely tied to Black Friday seasonality.
@@ -47,3 +43,7 @@
 - relogios_presentes (watches/gifts) has the highest average item price (R$200.17) among top categories despite lower order volume — a premium/low-volume category compared to others.
 - cama_mesa_banho (bed/bath/table) has the highest order count (9,051) but a lower average item price (R$93.13) — a high-volume, lower-value category.
 - Note: category names are in Portuguese (original Olist dataset labels); an English translation table exists in the source dataset but was not imported for this analysis.
+
+## Data Cleaning Notes
+- Date columns (`order_purchase_timestamp`, `order_delivered_customer_date`, etc.) were imported as `text` type, not native dates — required CAST(... AS DATETIME) before any date-based calculations.
+- `olist_customers_dataset` has two identifiers: `customer_id` (unique per order) and `customer_unique_id` (unique per real customer) — must use the latter for any "number of unique customers" type questions.

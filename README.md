@@ -65,10 +65,10 @@ Built using Recency, Frequency, and Monetary value via layered CTEs and window f
 ## 📸 Dashboard
 
 **Page 1 — Overview**
-![Dashboard Overview](dashboard/dashboard_overview.jpeg)
+![Dashboard Overview](dashboard_overview.jpeg)
 
 **Page 2 — Seller Performance**
-![Seller Performance](dashboard/seller_performance.jpeg)
+![Seller Performance](seller_performance.jpeg)
 
 ## 🧹 Data Cleaning Notes
 

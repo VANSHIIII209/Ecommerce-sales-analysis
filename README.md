@@ -13,7 +13,6 @@ Olist is a Brazilian e-commerce marketplace connecting small businesses (sellers
 - **Git & GitHub** — version control and project hosting
 
 ## 📁 Project Structure
-## 📁 Project Structure
 
 - **`sql/`** — All analysis queries, organized by topic (overview, delivery, revenue, RFM, payments, categories, sellers)
 - **`findings/key_insights.md`** — Full write-up of findings for each analysis

@@ -13,21 +13,13 @@ Olist is a Brazilian e-commerce marketplace connecting small businesses (sellers
 - **Git & GitHub** — version control and project hosting
 
 ## 📁 Project Structure
-Ecommerce-sales-analysis/
-├── sql/ # All analysis queries, organized by topic
-│ ├── 01_overview_metrics.sql
-│ ├── 02_delivery_performance.sql
-│ ├── 03_revenue_trends.sql
-│ ├── 04_customer_segmentation_rfm.sql
-│ ├── 05_payment_analysis.sql
-│ ├── 06_product_category_analysis.sql
-│ └── 07_seller_performance.sql
-├── findings/
-│ └── key_insights.md # Full write-up of findings for each analysis
-├── dashboard/
-│ ├── dashboard_overview.jpeg # Power BI dashboard — Page 1
-│ └── seller_performance.jpeg # Power BI dashboard — Page 2
-└── README.md
+## 📁 Project Structure
+
+- **`sql/`** — All analysis queries, organized by topic (overview, delivery, revenue, RFM, payments, categories, sellers)
+- **`findings/key_insights.md`** — Full write-up of findings for each analysis
+- **`dashboard_overview.jpeg`** — Power BI dashboard, Page 1
+- **`seller_performance.jpeg`** — Power BI dashboard, Page 2
+- **`README.md`** — This file
 
 ## 🔍 Key Findings
 
